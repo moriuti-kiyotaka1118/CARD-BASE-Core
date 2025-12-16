@@ -1,0 +1,114 @@
+[
+  {
+    "id": "ygo-001",
+    "name": "青眼の白龍",
+    "type": "ドラゴン族/通常",
+    "attribute": "光",
+    "level": 8,
+    "atk": 3000,
+    "def": 2500,
+    "description": "高潔な心を持つ白龍。美しい姿に反して、破壊力は計り知れない。",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/89631139.jpg"
+  },
+  {
+    "id": "ygo-002",
+    "name": "ブラック・マジシャン",
+    "type": "魔法使い族/通常",
+    "attribute": "闇",
+    "level": 7,
+    "atk": 2500,
+    "def": 2100,
+    "description": "魔術を操る最強の魔法使い。その力は計り知れない。",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/46986414.jpg"
+  },
+  {
+    "id": "ygo-003",
+    "name": "真紅眼の黒竜",
+    "type": "ドラゴン族/通常",
+    "attribute": "闇",
+    "level": 7,
+    "atk": 2400,
+    "def": 2000,
+    "description": "真紅の眼を持つ黒竜。怒りに燃えるその姿は、見る者に恐怖を与える。",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/74677422.jpg"
+  },
+  {
+    "id": "ygo-004",
+    "name": "死者蘇生",
+    "type": "通常魔法",
+    "description": "自分または相手の墓地のモンスター1体を選んで自分フィールドに特殊召喚する。",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/83764718.jpg"
+  },
+  {
+    "id": "ygo-005",
+    "name": "神の宣告",
+    "type": "カウンター罠",
+    "description": "魔法・罠カードの発動、またはモンスターの召喚・反転召喚・特殊召喚のいずれか1つを無効にし破壊する。",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/41420027.jpg"
+  },
+  {
+    "id": "ygo-006",
+    "name": "エルドリッチ・メルトダウン",
+    "type": "フィールド魔法",
+    "description": "「エルドリッヒ」モンスターの攻撃力・守備力は300アップする。",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/14512825.jpg"
+  },
+  {
+    "id": "ygo-007",
+    "name": "アクア・アルタイル",
+    "type": "水族/効果",
+    "attribute": "水",
+    "level": 4,
+    "atk": 1200,
+    "def": 2000,
+    "description": "このカードが召喚・反転召喚に成功した時に発動できる。デッキから「アクア」と名のついたモンスター1体を手札に加える。",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/12398280.jpg"
+  },
+  {
+    "id": "ygo-008",
+    "name": "サイバー・ドラゴン",
+    "type": "機械族/効果",
+    "attribute": "光",
+    "level": 5,
+    "atk": 2100,
+    "def": 1600,
+    "description": "相手フィールドにモンスターが存在し、自分フィールドにモンスターが存在しない場合、このカードは手札から特殊召喚できる。",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/70095154.jpg"
+  },
+  {
+    "id": "ygo-009",
+    "name": "強欲で貪欲な壺",
+    "type": "通常魔法",
+    "description": "デッキからカードを2枚ドローする。その後、手札を1枚選んでデッキに戻す。",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/55144522.jpg"
+  },
+  {
+    "id": "ygo-010",
+    "name": "神の忠告",
+    "type": "カウンター罠",
+    "description": "モンスターの召喚・反転召喚・特殊召喚を無効にし、そのモンスターを破壊する。その後、自分は3000ライフポイントを払う。",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/40605147.jpg"
+  },
+  {
+    "id": "ygo-011",
+    "name": "エクシーズ・アーマー・ソーサラー",
+    "type": "魔法使い族/エクシーズ/効果",
+    "attribute": "闇",
+    "rank": 4,
+    "atk": 0,
+    "def": 0,
+    "description": "レベル4モンスター×2\n1ターンに1度、このカードのエクシーズ素材を1つ取り除いて発動できる。デッキからカードを1枚ドローする。",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/69170557.jpg"
+  },
+  {
+    "id": "ygo-012",
+    "name": "No.39 希望皇ホープ",
+    "type": "戦士族/エクシーズ/効果",
+    "attribute": "光",
+    "rank": 4,
+    "atk": 2500,
+    "def": 2000,
+    "description": "レベル4モンスター×2\n相手モンスターの攻撃宣言時に、このカードのエクシーズ素材を1つ取り除いて発動できる。その攻撃を無効にする。",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/84013237.jpg"
+  }
+]

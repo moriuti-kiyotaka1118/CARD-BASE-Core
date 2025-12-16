@@ -1,0 +1,228 @@
+import React, { useState, useEffect } from 'react';
+import { 
+  ChakraProvider,
+  VStack, 
+  HStack,
+  Heading, 
+  useToast,
+  Button,
+  Box,
+  Text
+} from '@chakra-ui/react';
+import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
+import { GameLayout } from './components/GameLayout';
+import { PokemonGame } from './games/pokemon/PokemonGame';
+import { GAMES } from './types/game';
+import theme from './theme';
+
+function App() {
+  const [currentGame, setCurrentGame] = useState<keyof typeof GAMES>('pokemon');
+  const navigate = useNavigate();
+  const location = useLocation();
+  const toast = useToast();
+
+  // ルートにアクセスしたらデフォルトでポケモンにリダイレクト
+  useEffect(() => {
+    if (location.pathname === '/') {
+      navigate(GAMES.pokemon.path, { replace: true });
+    } else {
+      // 現在のパスからゲームを設定
+      const game = Object.entries(GAMES).find(
+        ([_, game]) => game.path === location.pathname
+      );
+      if (game) {
+        setCurrentGame(game[0] as keyof typeof GAMES);
+      }
+    }
+  }, [location.pathname, navigate]);
+
+  const handleGameChange = (game: string) => {
+    setCurrentGame(game as keyof typeof GAMES);
+    navigate(GAMES[game as keyof typeof GAMES].path);
+  };
+
+  // 認証は一旦削除（必要に応じて後で追加）
+  const isAuthenticated = true;
+  }, [searchQuery, selectedType, allCards]);
+
+  // カードをデッキに追加
+  const handleDropCard = (card: CardType) => {
+    setDeck(prevDeck => {
+      if (prevDeck.length >= 60) {
+        toast({
+          title: 'デッキの上限に達しました',
+          description: 'デッキの最大枚数は60枚です',
+          status: 'warning',
+          duration: 2000,
+          isClosable: true,
+        });
+        return prevDeck;
+      }
+      return [...prevDeck, card];
+    });
+  };
+
+  // カードをデッキから削除
+  const handleRemoveCard = (cardIndex: number) => {
+    setDeck(prevDeck => {
+      const newDeck = [...prevDeck];
+      newDeck.splice(cardIndex, 1); // クリックされたカードのみを削除
+      return newDeck;
+    });
+    
+    // デバッグ用ログ
+    console.log('Removing card at index:', cardIndex);
+  };
+
+  // デッキをクリア
+  const handleClearDeck = () => {
+    console.log('Clearing deck...');
+    setDeck([]);
+    // Force a re-render to ensure state is updated
+    setDeck(prevDeck => {
+      console.log('Deck after clear:', prevDeck);
+      return [];
+    });
+  };
+
+  // デッキを共有
+  const handleShareDeck = async () => {
+    if (deck.length === 0) {
+      toast({
+        title: 'デッキが空です',
+        description: '共有するデッキにカードを追加してください',
+        status: 'warning',
+        duration: 2000,
+        isClosable: true,
+      });
+      return;
+    }
+
+    try {
+      const shareUrl = generateShareLink(deck);
+      await navigator.clipboard.writeText(shareUrl);
+      
+      toast({
+        title: 'デッキのリンクをコピーしました',
+        description: 'このリンクを共有すると、他の人がこのデッキを表示できます',
+        status: 'success',
+        duration: 5000,
+        isClosable: true,
+      });
+    } catch (error) {
+      console.error('Failed to copy deck link:', error);
+      toast({
+        title: '共有リンクのコピーに失敗しました',
+        status: 'error',
+        duration: 3000,
+        isClosable: true,
+      });
+    }
+  };
+
+  // デッキを保存
+  const handleSaveDeck = () => {
+    if (deck.length === 0) {
+      toast({
+        title: 'デッキが空です',
+        description: 'デッキにカードを追加してください',
+        status: 'warning',
+        duration: 2000,
+        isClosable: true,
+      });
+      return;
+    }
+
+    const deckName = prompt('デッキ名を入力してください:');
+    if (!deckName) return;
+
+    try {
+      // 現在のデッキを保存
+      localStorage.setItem(DECK_STORAGE_KEY, JSON.stringify(deck));
+      
+      // 保存されたデッキのリストを更新
+      const savedDecks = JSON.parse(localStorage.getItem('saved-decks') || '[]');
+      const newDeck = {
+        id: Date.now().toString(),
+        name: deckName,
+        cards: deck,
+        createdAt: new Date().toISOString()
+      };
+      
+      const updatedDecks = [...savedDecks, newDeck];
+      localStorage.setItem('saved-decks', JSON.stringify(updatedDecks));
+      
+      toast({
+        title: 'デッキを保存しました',
+        status: 'success',
+        duration: 2000,
+        isClosable: true,
+      });
+    } catch (error) {
+      console.error('Failed to save deck', error);
+      toast({
+        title: 'デッキの保存に失敗しました',
+        status: 'error',
+        duration: 2000,
+        isClosable: true,
+      });
+    }
+  };
+  
+  // デッキを読み込む
+  const handleLoadDeck = (loadedDeck: CardType[]) => {
+    setDeck(loadedDeck);
+  };
+
+  const handleLogin = () => {
+    setIsAuthenticated(true);
+  };
+
+
+  return (
+    <ChakraProvider theme={theme}>
+      <GameLayout 
+        currentGame={currentGame}
+        onGameChange={handleGameChange}
+      >
+        <Routes>
+          <Route 
+            path={GAMES.pokemon.path} 
+            element={
+              <PokemonGame 
+                onGameChange={handleGameChange} 
+              />
+            } 
+          />
+          <Route 
+            path={GAMES.yugioh.path} 
+            element={
+              <Box p={4} textAlign="center">
+                <Heading size="lg" mb={4}>遊戯王 デッキビルダー（準備中）</Heading>
+                <Text>この機能は現在開発中です。しばらくお待ちください。</Text>
+              </Box>
+            } 
+          />
+          <Route 
+            path={GAMES.duelmasters.path} 
+            element={
+              <Box p={4} textAlign="center">
+                <Heading size="lg" mb={4}>デュエル・マスターズ デッキビルダー（準備中）</Heading>
+                <Text>この機能は現在開発中です。しばらくお待ちください。</Text>
+              </Box>
+            } 
+          />
+        </Routes>
+      </GameLayout>
+    </ChakraProvider>
+  );
+}
+
+// ルーティングを有効にするためのラッパーコンポーネント
+const AppWithRouter = () => (
+  <Router>
+    <App />
+  </Router>
+);
+
+export default AppWithRouter;

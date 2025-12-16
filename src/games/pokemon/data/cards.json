@@ -1,0 +1,83 @@
+[
+  {
+    "id": "1",
+    "name": "リザードン",
+    "type": "炎",
+
+
+    "imageUrl": "/images/card-1.png"
+  },
+  {
+    "id": "2",
+    "name": "エリカのウツボット",
+    "type": "草",
+
+    "imageUrl": "/images/MC_008_Normal.png"
+  },
+  {
+    "id": "3",
+    "name": "ネオラントV",
+    "type": "水",
+
+
+    "imageUrl": "/images/1506_008_457NEOLANTv.png"
+  },
+  {
+    "id": "4",
+    "name": "メガシビルドンEX",
+    "type": "雷",
+
+    "imageUrl": "images/049.png"
+  },
+  {
+    "id": "5",
+    "name": "ミュウ",
+    "type": "超",
+    "imageUrl": "images/1506_011_151MEW.png"
+  },
+  {
+    "id": "6",
+    "name": "ガブリアス",
+    "type": "闘",
+
+    "imageUrl": "images/1324_R028_445GABURIAS.png"
+  },
+  {
+    "id": "7",
+    "name": "Nのゾロアーク",
+    "type": "悪",
+
+    "imageUrl": "images/about-card-1.png"
+  },
+  {
+    "id": "8",
+    "name": "ハッサムEX",
+    "type": "鋼",
+
+    "imageUrl": "images/004567_1.png"
+  },
+  {
+    "id": "9",
+    "name": "メガカイリューEX",
+    "type": "ドラゴン",
+    "imageUrl": "images/126.png"
+  },
+  {
+    "id": "10",
+    "name": "モトトカゲEX",
+    "type": "無色",
+    "imageUrl": "images/1500_SVP_009_0967MOTOTOKAGEex.png"
+  },
+  {
+    "id": "11",
+    "name": "セレナ",
+    "type": "サポート",
+    "imageUrl": "images/1506_020_T_Serena.png"
+  },
+  {
+    "id": "12",
+    "name": "Nのポイントアップ",
+    "type": "グッズ",
+    "imageUrl": "images/about-card-6.png"
+  }
+]

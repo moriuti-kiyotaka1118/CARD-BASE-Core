@@ -1,0 +1,42 @@
+[
+  {
+    "id": "ace-spec-computer-search",
+    "name": "コンピュータサーチ",
+    "type": "エーススペック",
+    "subtype": "グッズ",
+    "description": "自分の山札を2枚トラッシュする。自分の山札からカードを1枚選び、手札に加える。その後、山札を切る。",
+    "imageUrl": "/images/ace-spec-computer-search.png"
+  },
+  {
+    "id": "ace-spec-dowsing-machine",
+    "name": "ダウジングマシン",
+    "type": "エーススペック",
+    "subtype": "グッズ",
+    "description": "自分のトラッシュからカードを1枚選び、手札に加える。",
+    "imageUrl": "/images/ace-spec-dowsing-machine.png"
+  },
+  {
+    "id": "ace-spec-rock-guard",
+    "name": "がんじょうガード",
+    "type": "エーススペック",
+    "subtype": "グッズ",
+    "description": "このカードをつけているポケモンがバトル場をはなれたとき、相手のポケモンに20ダメージ。このダメージは弱点・抵抗力を計算しない。",
+    "imageUrl": "/images/ace-spec-rock-guard.png"
+  },
+  {
+    "id": "ace-spec-life-dew",
+    "name": "せいめいのしずく",
+    "type": "エーススペック",
+    "subtype": "グッズ",
+    "description": "このカードをつけているポケモンがきぜつしたとき、相手のサイドのカードを1枚トラッシュする。",
+    "imageUrl": "/images/ace-spec-life-dew.png"
+  },
+  {
+    "id": "ace-spec-g-booster",
+    "name": "Gブースター",
+    "type": "エーススペック",
+    "subtype": "グッズ",
+    "description": "このカードをつけているポケモンの「わざ」のダメージは+20される。このカードは「ゲンシ」ポケモEXにつけることができる。",
+    "imageUrl": "/images/ace-spec-g-booster.png"
+  }
+]

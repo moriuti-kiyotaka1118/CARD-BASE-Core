@@ -1,0 +1,82 @@
+[
+  {
+    "id": "special-energy-double-colorless",
+    "name": "ダブル無色エネルギー",
+    "type": "特殊エネルギー",
+    "subtype": "無色",
+    "description": "このカードは、無色エネルギー2個分としてはたらく。ただし、1つしかエネルギーとしては使えない。",
+    "imageUrl": "/images/special-energy-double-colorless.png"
+  },
+  {
+    "id": "special-energy-rainbow",
+    "name": "レインボーエネルギー",
+    "type": "特殊エネルギー",
+    "subtype": "無色",
+    "description": "このカードは、すべてのタイプのエネルギー1個分としてはたらく。ただし、1つしかエネルギーとしては使えない。",
+    "imageUrl": "/images/special-energy-rainbow.png"
+  },
+  {
+    "id": "special-energy-unit-lightning",
+    "name": "ユニットエネルギー LPM",
+    "type": "特殊エネルギー",
+    "subtype": "無色",
+    "description": "このカードは、雷・鋼・超のいずれかのエネルギー1個分としてはたらく。",
+    "imageUrl": "/images/special-energy-unit-lpm.png"
+  },
+  {
+    "id": "special-energy-unit-fighting",
+    "name": "ユニットエネルギー FDF",
+    "type": "特殊エネルギー",
+    "subtype": "無色",
+    "description": "このカードは、炎・闘・悪のいずれかのエネルギー1個分としてはたらく。",
+    "imageUrl": "/images/special-energy-unit-fdf.png"
+  },
+  {
+    "id": "special-energy-unit-grass",
+    "name": "ユニットエネルギー GWP",
+    "type": "特殊エネルギー",
+    "subtype": "無色",
+    "description": "このカードは、草・水・超のいずれかのエネルギー1個分としてはたらく。",
+    "imageUrl": "/images/special-energy-unit-gwp.png"
+  },
+  {
+    "id": "special-energy-strong",
+    "name": "ストロングエネルギー",
+    "type": "特殊エネルギー",
+    "subtype": "闘",
+    "description": "このカードがついているポケモンの「わざ」のダメージは+20される。このカードは1つのポケモンに1枚しかつけられない。",
+    "imageUrl": "/images/special-energy-strong.png"
+  },
+  {
+    "id": "special-energy-double-dragon",
+    "name": "ダブルドラゴンエネルギー",
+    "type": "特殊エネルギー",
+    "subtype": "ドラゴン",
+    "description": "このカードは、無色エネルギー2個分としてはたらく。このカードがついているポケモンが「ドラゴン」タイプなら、ダメージは+20される。",
+    "imageUrl": "/images/special-energy-double-dragon.png"
+  },
+  {
+    "id": "special-energy-aurora",
+    "name": "オーロラエネルギー",
+    "type": "特殊エネルギー",
+    "subtype": "無色",
+    "description": "このカードは、すべてのタイプのエネルギー1個分としてはたらく。このカードがついているポケモンは、ワザによる効果を受けない。",
+    "imageUrl": "/images/special-energy-aurora.png"
+  },
+  {
+    "id": "special-energy-draw",
+    "name": "ドローエネルギー",
+    "type": "特殊エネルギー",
+    "subtype": "無色",
+    "description": "このカードを手札から出して自分の番に1回だけ、山札を1枚引く。その後、このカードを手札に戻す。",
+    "imageUrl": "/images/special-energy-draw.png"
+  },
+  {
+    "id": "special-energy-recycle",
+    "name": "リサイクルエネルギー",
+    "type": "特殊エネルギー",
+    "subtype": "無色",
+    "description": "このカードがトラッシュされたとき、コインを投げてオモテなら、このカードを手札に戻す。",
+    "imageUrl": "/images/special-energy-recycle.png"
+  }
+]

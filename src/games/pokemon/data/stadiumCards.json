@@ -1,0 +1,37 @@
+[
+  {
+    "id": "stadium-brooklet-hill",
+    "name": "ブルーベルフロント",
+    "type": "スタジアム",
+    "description": "各プレイヤーは、自分の番に1回、手札から水ポケモンまたは雷ポケモンを1枚、ベンチに出すことができる。",
+    "imageUrl": "/images/stadium-brooklet-hill.png"
+  },
+  {
+    "id": "stadium-ultra-forest",
+    "name": "ウルトラフォレスト",
+    "type": "スタジアム",
+    "description": "各プレイヤーは、自分の番に1回、手札から進化ポケモンを1枚、自分のポケモンに重ねて進化させることができる。",
+    "imageUrl": "/images/stadium-ultra-forest.png"
+  },
+  {
+    "id": "stadium-mt-coronet",
+    "name": "テンガン山",
+    "type": "スタジアム",
+    "description": "各プレイヤーは、自分の番に1回、手札から基本エネルギーを1枚、自分のポケモン1匹につけることができる。",
+    "imageUrl": "/images/stadium-mt-coronet.png"
+  },
+  {
+    "id": "stadium-path-to-the-peak",
+    "name": "頂上への道",
+    "type": "スタジアム",
+    "description": "すべてのポケモンV、ポケモンGX、ポケモンEXの特性は無効化される。",
+    "imageUrl": "/images/stadium-path-to-the-peak.png"
+  },
+  {
+    "id": "stadium-rough-seas",
+    "name": "荒れる海",
+    "type": "スタジアム",
+    "description": "自分の番ごとに1回、自分の水ポケモンまたは雷ポケモン1匹のHPを30回復してもよい。",
+    "imageUrl": "/images/stadium-rough-seas.png"
+  }
+]

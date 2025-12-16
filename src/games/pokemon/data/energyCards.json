@@ -1,0 +1,58 @@
+[
+  {
+    "id": "energy-grass",
+    "name": "草エネルギー",
+    "type": "エネルギー",
+    "description": "基本エネルギーカード",
+    "imageUrl": "/images/energy-grass.png"
+  },
+  {
+    "id": "energy-fire",
+    "name": "炎エネルギー",
+    "type": "エネルギー",
+    "description": "基本エネルギーカード",
+    "imageUrl": "/images/energy-fire.png"
+  },
+  {
+    "id": "energy-water",
+    "name": "水エネルギー",
+    "type": "エネルギー",
+    "description": "基本エネルギーカード",
+    "imageUrl": "/images/energy-water.png"
+  },
+  {
+    "id": "energy-electric",
+    "name": "雷エネルギー",
+    "type": "エネルギー",
+    "description": "基本エネルギーカード",
+    "imageUrl": "/images/energy-electric.png"
+  },
+  {
+    "id": "energy-fighting",
+    "name": "闘エネルギー",
+    "type": "エネルギー",
+    "description": "基本エネルギーカード",
+    "imageUrl": "/images/energy-fighting.png"
+  },
+  {
+    "id": "energy-steel",
+    "name": "鋼エネルギー",
+    "type": "エネルギー",
+    "description": "基本エネルギーカード",
+    "imageUrl": "/images/energy-steel.png"
+  },
+  {
+    "id": "energy-psychic",
+    "name": "超エネルギー",
+    "type": "エネルギー",
+    "description": "基本エネルギーカード",
+    "imageUrl": "/images/energy-psychic.png"
+  },
+  {
+    "id": "energy-dark",
+    "name": "悪エネルギー",
+    "type": "エネルギー",
+    "description": "基本エネルギーカード",
+    "imageUrl": "/images/energy-dark.png"
+  }
+]
