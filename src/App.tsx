@@ -4,6 +4,7 @@ import { Routes, Route, useNavigate } from 'react-router-dom';
 import { GameLayout } from './components/GameLayout';
 import { PokemonGame } from './games/pokemon/PokemonGame';
 import YugiohGame from './games/yugioh/YugiohGame';
+import DuelMastersGame from './games/duelmasters/DuelMastersGame';
 import HomePage from './pages/HomePage';
 import CardSearchPage from './pages/CardSearchPage';
 import ComingSoonPage from './components/ComingSoonPage';
@@ -35,76 +36,88 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/select-title" element={<TitleSelectionPage />} />
-          
+
           {/* Deck Building Routes */}
           <Route path="/decks/select-title" element={<TitleSelectionPage />} />
-          
+
           {/* Game-specific Routes */}
-          <Route path="/pokemon/*" element={
-            <GameLayout>
-              <PokemonGame onGameChange={handleGameChange} />
-            </GameLayout>
-          } />
-          
-          <Route path="/yugioh/*" element={
-            <GameLayout>
-              <YugiohGame onGameChange={handleGameChange} />
-            </GameLayout>
-          } />
-          
-          <Route path="/duelmasters/*" element={
-            <ComingSoonPage 
-              title="デュエル・マスターズ（準備中）"
-              description="デュエル・マスターズの機能は現在準備中です。"
-            />
-          } />
-          
+          <Route
+            path="/pokemon/*"
+            element={
+              <GameLayout>
+                <PokemonGame onGameChange={handleGameChange} />
+              </GameLayout>
+            }
+          />
+
+          <Route
+            path="/yugioh/*"
+            element={
+              <GameLayout>
+                <YugiohGame onGameChange={handleGameChange} />
+              </GameLayout>
+            }
+          />
+
+          <Route
+            path="/duelmasters/*"
+            element={
+              <GameLayout>
+                <DuelMastersGame onGameChange={handleGameChange} />
+              </GameLayout>
+            }
+          />
+
           {/* Deck Builders */}
-          <Route path="/pokemon/deck-builder" element={
-            <GameLayout>
-              <PokemonGame onGameChange={handleGameChange} />
-            </GameLayout>
-          } />
-          
-          <Route path="/yugioh/deck-builder" element={
-            <GameLayout>
-              <YugiohGame onGameChange={handleGameChange} />
-            </GameLayout>
-          } />
-          
-          <Route path="/duelmasters/deck-builder" element={
-            <ComingSoonPage 
-              title="デュエル・マスターズ デッキビルダー（準備中）"
-              description="デュエル・マスターズのデッキビルダーは現在準備中です。"
-            />
-          } />
-          
+          <Route
+            path="/pokemon/deck-builder"
+            element={
+              <GameLayout>
+                <PokemonGame onGameChange={handleGameChange} />
+              </GameLayout>
+            }
+          />
+
+          <Route
+            path="/yugioh/deck-builder"
+            element={
+              <GameLayout>
+                <YugiohGame onGameChange={handleGameChange} />
+              </GameLayout>
+            }
+          />
+
+          <Route
+            path="/duelmasters/deck-builder"
+            element={
+              <GameLayout>
+                <DuelMastersGame onGameChange={handleGameChange} />
+              </GameLayout>
+            }
+          />
+
           {/* Other Pages */}
-          <Route path="/search" element={
-            <CardSearchPage />
-          } />
-          
-          <Route path="/my-decks" element={
-            <ComingSoonPage 
-              title="マイデッキ（準備中）"
-              description="マイデッキ機能は現在準備中です。"
-            />
-          } />
-          
-          <Route path="/settings" element={
-            <ComingSoonPage 
-              title="設定（準備中）"
-              description="設定画面は現在準備中です。"
-            />
-          } />
-          
+          <Route path="/search" element={<CardSearchPage />} />
+
+          <Route
+            path="/my-decks"
+            element={
+              <ComingSoonPage title="マイデッキ（準備中）" description="マイデッキ機能は現在準備中です。" />
+            }
+          />
+
+          <Route
+            path="/settings"
+            element={<ComingSoonPage title="設定（準備中）" description="設定画面は現在準備中です。" />}
+          />
+
           {/* 404 - Not Found */}
-          <Route path="*" element={
-            <ComingSoonPage 
-              title="ページが見つかりません"
-              description="お探しのページは見つかりませんでした。"
-            />
-          } />
+          <Route
+            path="*"
+            element={
+              <ComingSoonPage title="ページが見つかりません" description="お探しのページは見つかりませんでした。" />
+            }
+          />
         </Routes>
       </Box>
     </ChakraProvider>
